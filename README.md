@@ -1,38 +1,32 @@
 # VideoTrim
 
-
-[![CI Status](https://img.shields.io/travis/pikachu987/VideoTrim.svg?style=flat)](https://travis-ci.org/pikachu987/VideoTrim)
-[![Version](https://img.shields.io/cocoapods/v/VideoTrim.svg?style=flat)](https://cocoapods.org/pods/VideoTrim)
 [![License](https://img.shields.io/cocoapods/l/VideoTrim.svg?style=flat)](https://cocoapods.org/pods/VideoTrim)
 [![Platform](https://img.shields.io/cocoapods/p/VideoTrim.svg?style=flat)](https://cocoapods.org/pods/VideoTrim)
-![](https://img.shields.io/badge/Supported-iOS9%20%7C%20OSX%2010.9-4BC51D.svg?style=flat-square)
-[![Swift 5.0](https://img.shields.io/badge/Swift-5.0-orange.svg?style=flat)](https://developer.apple.com/swift/)
+![iOS 12+](https://img.shields.io/badge/Supported-iOS12.0+-4BC51D.svg?style=flat-square)
+[![Swift 5.0](https://img.shields.io/badge/Swift-5.10-orange.svg?style=flat)](https://developer.apple.com/swift/)
 
 ## Introduce
 
 You can extract an image for each video frame as a video asset and set the start time and end time.
 
-<br/>
-
-### VideoTrim
+### Preview
 
 <img src='./img/gif1.gif' width='200px'>
 
-|-|-|
-|---|---|
-|<img src='./img/img1.png' width='200px'>|<img src='./img/img2.png' width='200px'>|
+| -                                        | -                                        |
+| ---------------------------------------- | ---------------------------------------- |
+| <img src='./img/img1.png' width='200px'> | <img src='./img/img2.png' width='200px'> |
 
 ## Requirements
 
-`VideoTrim` written in Swift 5.0. Compatible with iOS 9.0+
+`VideoTrim` written in Swift 5.10. Compatible with iOS 12.0+
 
 ## Installation
 
-VideoTrim is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+Swift Package Manager
 
-```ruby
-pod 'VideoTrim'
+```sh
+git clone https://github.com/Adamekka/VideoTrim
 ```
 
 ## Usage
@@ -109,8 +103,6 @@ videoTrim.durationTime // CMTime from start time to end time.
 
 ```
 
-<br>
-
 ### Delegate
 
 ```swift
@@ -127,23 +119,21 @@ class ViewController: UIViewController{
 // MARK: VideoTrimDelegate
 extension ViewController: VideoTrimDelegate {
     func videoTrimStartTrimChange(_ videoTrim: VideoTrim) { // It is called when you touch the start time, end time, and play time.
-        
     }
 
     func videoTrimEndTrimChange(_ videoTrim: VideoTrim) { // Called at the end of touch start time, end time and play time.
-        
     }
 
     func videoTrimPlayTimeChange(_ videoTrim: VideoTrim) { // Called when touching the start time, end time and play time.
-        
     }
 }
 
 ```
 
-## Author
+## Authors
 
-pikachu987, pikachu77769@gmail.com
+pikachu987, <pikachu77769@gmail.com>
+Adamekka, <adam.wasd4@gmail.com>
 
 ## License
 
